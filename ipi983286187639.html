@@ -1,0 +1,132 @@
+<html>
+<body>
+In 1965, the Nobel Prize in physics was won by three scientists, for their discoveries in "Quantum Electrodynamics".
+                                                                        
+The one on the right, Richard P. Feynman is today the most popular. He was a genius. He discovered a whole new method to solve the problems in which light is created and seemingly destroyed by electric charges. Even when he was young, he used to fix radios by experimenting with them. When he was still a college student, he gave a lecture which was attended by Albert Einstein. He was also made to work on the atom bomb project, which was one of America's secret projects, started based on info that Hitler was making an atom bomb.They needed  a genius to help them on some of the more complex problems. There are many, many stories about his time there- he used to try and guess the passwords of other scientists' lockers, and leave funny messages inside. (He did much worse things- not a good role model.)
+
+He did not make a great discovery like Einstein, or Newton, but what made him different was his understanding  of very, very complex scientific topics.
+But, he was, mainly a great TEACHER.
+He was an expert at explaining things. He was nicknamed by one scientist as "the Great Explainer". In the 1960s, he was asked to teach physics for the 1st year students of the California Institute of Technology, because their classes were TOO BORING. He did this, and managed to make the subject interesting and simple to understand. Those are now called the Feynman lectures on Physics . They are so popular, that the college recorded every word- even today we have the full audio on tape. They were also printed as books in 3 volumes. They are a standard textbook on basic physics all over the world.
+One scientist even said that almost every physicist/student of physics is partially a student of Feynman's- because they have learnt something or the other from those books.(The whole thing is written online here). In these lectures, he explained stuff simply: he avoided BIG WORDS like "oscillation", or "acoustic reflection"- instead he said: "jiggle", or "echo". 
+So that's the problem- his popularity, his personality, the stories about him are so much fun- that many people do not know the details of his contribution  to science. Today after 50 years, people have managed to caption Feynman's approach to science in a phrase:
+
+                                                          "Physical information"
+
+- the "computing" view of physics, or the "information" view of physics. It was an approach to science that MADE IT EASY to understand, or easy to discuss, for most people. For example, in the 1980s, he gave a set of lectures on his work- "Quantum Electrodynamics", one of the most complicated and difficult topics in physics at that time- the mathematics is very  advanced. When describing complex numbers in the particle amplitude,  he did not use the usual algebra- instead he asks us to imagine small clocks  arranged in space.He explains the full theory, just talking about the clocks and the rate at which the clocks run. It is a great way of explaining this topic, and so easy to understand.
+THIS is what we are studying- this approach that made physics so simple, made mathematics very , very  simple. He believed that maths was just related to common imagination. Most of us don't believe that so easily, because we have been made to think that it is something scary. But somehow, this approach works very well.
+
+So, to summarise- it was this "computing" approach, or the "physical information" approach to maths and physics that made everything so easy.
+
+
+
+What does it have to do with computer science/IT?
+
+So, what is this "computing" approach to science? The central word is:  COMPUTATION. But this word is still too big- something smaller: COMPUTE. This may also sound too unfamiliar. Instead, we may start with a much more familiar word: COMPUTER
+All the definitions of "Computer" we learn in school and 1st year college were put together after the 1970s, when PCs were invented. But to get a better definition, we may go to Alan Turing, the FATHER OF MODERN COMPUTER SCIENCE.
+He was a mathematician, who was an expert at solving puzzles and was also called by the government to use his brain during World War II, like Feynman. He found a way to crack and read the coded messages of the Nazis and therefore shortened the length of the war by years, and saved thousands of lives. We will hear about his greatest contribution- the theory of computability later. One of his smaller contributions was related to one of the oldest electronic computers: the Ferranti Mark-1.
+Alan Turing wrote the manual for this computer, and the first page of the manual has a definition for "computer" which is a very good place to start:
+ "Electronic computers are intended to carry out any definite rule of thumb process which could have been done by a human operator working in a disciplined but un-intelligent manner..."
+                                    
+Lots of big words...Let us break it down.
+1. First- "RULE OF THUMB"...what does that mean?
+ Today, different dictionaries will give slightly different meanings for this phrase. But when Alan Turing wrote it, the meaning was (roughly): a series of clear, and simple STEPS to SOLVE a given problem. Examples: The "thumb rule" from school:
+                                                                
+A more familiar example is the METHOD to calculate the number of days in a months, as we learnt it in school:
+                                                                
+Step 1: Label each part of your hand as in the picture
+Step 2: If your month is on a "hill", it has 31 days
+Step 3: If your month is on a "dip", and if it is NOT February, it has 30 days
+Step 4: If your month is February, it has 28 days in a leap year, and 29 days otherwise.
+
+Now, this RULE OF THUMB is truly wonderful to use, since we do not have to look at a calendar to calculate the number of days in a month. We can just LOOK AT OUR FINGERS. This is a quality of GOOD rules of thumb: i) We can remember them easily, ii) We can follow the steps so easily that we don't need to think too much at all. This quality was called by scientist Donald Knuth as "EFFECTIVENESS". We say that a rule of thumb is "EFFECTIVE" if it satisfies those 2 conditions. Actually, Donald Knuth gives 5 requirements in total:
+Finiteness- The rule of thumb must give you the answer in finite number of steps/ in finite time
+Definiteness- Every step must be CLEARLY SPECIFIED and can be UNDERSTOOD by anyone
+Input- The problem should be clearly defined
+Output- The answer we want should be clearly defined
+Effectiveness- Every step can be followed by anyone with a paper and pencil
+Knuth also suggests that this is not enough. He says that instead of just Finite time, we must make sure that the rule of thumb gives us an answer in a short time.
+The days-months example is so good that most of us don’t even realise that we are following a series of steps- we just do it, and the answer is in front of us.
+Now there is another feature of the months-days rule of thumb: we don't need a calendar to tell us how many days are in a month. We can find out on our own, using the above trick. The only thing we have to be careful about is that February is different: 28 days in a normal year, 29 in a leap year. This means that there is a huge reduction in the amount of information we need to solve the problem:
+i)    We don’t need a list of Months vs Days
+ii)    We don’t need to have a calendar
+iii)    We only need to remember that February is different
+If you have not already guessed by now, what Turing calls a “rule-of-thumb” in his manual is what we today call an “algorithm”. In fact this feature of the months-days rule of thumb: how it reduces the load on our memory- is almost fundamental.
+Two scientists/philosophers, Boolos and Jeffrey, say that this is the entire purpose of an algorithm/rule-of-thumb: to reduce the amount of stuff we have to memorise or record. They have pointed out that every algorithm allows us to stop writing down a large list of things- like the months vs days list- and instead just follow the steps in the rule-of-thumb.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Actually, it is very easy to describe the pattern of days per month:
+
+Jan-31
+Feb-28/29
+Mar-31
+Apr-30
+May-31
+Jun-30
+Jul-31
+--------
+Aug-31
+Sep-30
+Oct-31
+Nov-30
+Dec-31
+
+
+The pattern can very easily be described
+Before August, every odd month (Jan, March, May, July) has 31 days, and every even month (February, April, June) has 30 days- EXCEPT FEBRUARY.
+From August to December, every even month (August, October, December) has 31 days and every odd month (September, November) has 30 days
+At our age, it is very easy to remember the number of the month- i.e. Jan: 1, Feb: 2, Mar: 3, ….etc.
+So we can rewrite this as
+For month no. n:
+For n<8 (Before August) every odd n has 31 days, and every even n has 30 days- EXCEPT NO. 2.
+For n= 8 to 12, every even n has 31 days and every odd n has 30 days.
+Notice that we can write this even smaller
+For month n:
+For every odd n<8 and every even n >=8, there are 31 days.
+For every odd n>8 and every even n<8, there are 30 days.
+Exception: February
+Notice that we have used some mathematical symbols- but we were simply expressing our thoughts, and we got this ^.
+And so we come to the central point:
+All mathematics is a study of rule-of-thumbs, and is mainly a collection of rule-of-thumbs.
+Does this mean that all of these rule-of-thumbs in mathematics are easy, simple, …. “Definitive”, “effective”...usable by anyone with a paper and pencil, like we said above?
+Many mathematicians believe this.
+So, this is what makes mathematics simple:
+Every problem in mathematics that has already been solved has a simple, clear rule of thumb that anyone with a pencil and paper can follow. 
+This has been a firm belief of several mathematicians and scientists of various disciplines- and some say that computer science grew out of this belief.
+-------------------------------
+
+Of course, not everyone thinks in terms of numbers and geometry, which is what most of mathematics is about.
+But the next word in Alan Turing’s definition takes care of this:
+ "...working in a disciplined but un-intelligent manner..."
+Why “unintelligent”?
+We may explain with a story. 
+-----------------------------------------------
+							
+John von Neumann, the mathematician/physicist who came up with the modern model of computer memory,  was at a party. Another scientist came up to him and gave him a maths problem:
+Two trains are on the same track a distance 100 km apart heading towards one another, each at a speed of 50 km/h. A fly starting out at the front of one train, flies towards the other at a speed of 75 km/h. Upon reaching the other train, the fly turns around and continues towards the first train. What is the total distance the fly travels (right and left and right and left…etc.) before being squashed?
+John von Neumann immediately answered: 75 km.
+His friend said:
+
+“Very good. You know the trick then. You realise that the fly is always flying at 75 km/h without slowing down or stopping. Since the trains are moving at the same speed, they  will meet each other in the middle- the 50 km mark. Since they are travelling at 50 km/h, this will take them 1 hour. So in this one hour, the fly is continuously travelling at 75 km/h- which means it covers 75 km totally.
+“It is funny,...usually when I ask an intelligent scientist this question, they will try to calculate how much time it takes for the fly to travel one direction before it hits the other train, then how much time it takes to travel in the opposite direction before it hits the first train, again, and again ... until the two trains hit each other. Then they add up all those distances and tell the answer.”
+John von Neumann replied:
+“That’s what I did.”
+---------------------------
+Okay, so John von Neumann was a genius- he did all that and answered his friend in a few seconds. But what do we learn from this story?
+The two men's thinking was very different:
+John von Neumann followed a rule of thumb- his friend guessed; actually, it seems his friend was more of  genius.
+
+Alan Turing said:
+"Mathematical reasoning may be regarded rather schematically as the exercise of a combination of two facilities, which we may call intuition and ingenuity."                    
+Turing actually believed that both ways of solving the problem follow some rule of thumb. But we can tell the difference- one can solve problems, by either following the various rule-of-thumbs, or by being a genius. It is not clear to me, which word describes John von Neumann's thinking, but this is a pattern:
+----------------------------------------------------------------------
+Another word in Turing's statement: "disciplined".
+
+A person who's trying to follow a rule of thumb is disciplined if he/she follows the steps exactly and correctly. In reality, people make mistakes. In fact, Newton himself is said to have made a mistake while deriving his famous shell theorem that delayed him for more than a decade. But, theoretically, if one had a book, with every single rule-of-thumb to solve every problem, then anyone who has that book can solve any problem. The problem- people make mistakes. But we can still  imagine some perfect, disciplined human being- a robot-like person which follows the rule of thumbs in that book- without mistakes. (That person is what Turing calls a HUMAN COMPUTER.)Actually people have been trying to make such a book- a book with every rule of thumb for thousands of years. One of the first ones to try was Pythagoras: his philosophy was that the entire UNIVERSE can be described using NUMBERS. But his rule of thumbs could not solve the problem: what is the square root of 2 ? So his rule-of-thumbs were given up and another set was taken. These were written in a book called Elements by the ancient Greek mathematician Euclid.
+                                  
+Euclid believed that that book contained the rule of thumbs that solved every problem in the universe. These were the main ideas  in that book: called Euclid's axioms:
+                                
+Notice that these do not look like rule-of-thumbs. There are no steps! These are more like facts/laws/principles- not rule-of-thumbs. But, all of these can be converted into rule-of-thumbs easily. In fact, the problem of converting statements like these into rule-of-thumbs is referred to as the problem of "deriving procedural knowledge from declarative knowledge". It is an important problem, especially in computer science.
+Today we know that Euclid's rule-of-thumbs do not solve EVERY problem in the universe- actually  rule no. 5 gives WRONG answers in some problems.
+In the 1900s, a group of French mathematicians tried to do the same thing as Euclid. The Bourbaki group tried to write a book which contained new rule-of-thumbs to solve every problem in maths.(They failed.)
+By the early 1900s, people became obsessed with this- another example was the book by Russell and Whitehead. But soon, Turing along with an Austrian mathematician Kurt Godel pointed out a problem with this: they showed that it may not be possible to write such a book ever. But in the process, they invented a language in which every rule of thumb can be written down. This language has been so powerful, that it has been used to solve SO MANY problems, that some people still believe that every problem can be solved with this language- even problems like: which is the most beautiful painting in the world? This is the essence of the ART or SCIENCE? question that every person must ask when they set out to present a solution to a problem.
+</body>
+</html>
